@@ -17,6 +17,7 @@ BEGIN
 		LEFT JOIN accounts_cleaned_location AS loct
 		ON loct.location_id = txn.location_id
 	),
+	--To make this query more descriptive
 	important_columns AS (
 		SELECT 
 			transaction_date,
